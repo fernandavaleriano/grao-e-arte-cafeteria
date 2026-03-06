@@ -1,7 +1,8 @@
 Grão & Arte | Coffee Experience Landing Page
 Landing page de alta fidelidade desenvolvida para uma cafeteria boutique, focada em experiência do usuário (UX) e conversão direta via canais digitais.
 
-Link para o Deploy no Netlify
+Link para Netlify  https://graoearte.netlify.app/
+
 
 Quick Stack
 Frontend: HTML5 Semântico, CSS3 (Flexbox/Animations).
