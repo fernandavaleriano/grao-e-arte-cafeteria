@@ -24,3 +24,18 @@ video360.addEventListener('click', () => {
         video360.paused = true;
     }
 });
+
+function toggleMenu() {
+    const nav = document.getElementById('nav-menu');
+    const btn = document.querySelector('.menu-mobile'); // Seleciona o botão
+    
+    nav.classList.toggle('ativo');
+    btn.classList.toggle('ativo'); // Adiciona/remove a classe no botão também
+}
+
+document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', () => {
+    const nav = document.getElementById('nav-menu');
+    nav.classList.remove('ativo');
+    });
+});

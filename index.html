@@ -11,37 +11,46 @@
 </head>
 <body>
 
-    <header>
-        <div class="interface">
-            <div class="logo">
-                <img src="imagens/grao-e-arte.png.png" alt="Logo Grão e Arte">
-            </div>
-            <nav>
-                <ul class="menu-lista">
-                    <li><a href="#inicio">INÍCIO</a></li>
-                    <li><a href="#sobre">SOBRE</a></li>
-                    <li><a href="#cardapio">CARDÁPIO</a></li>
-                    <li><a href="#contato">CONTATOS</a></li> 
-                </ul>
-            </nav>
+   <header>
+    <div class="interface">
+        <div class="logo">
+            <img src="imagens/grao-e-arte.png.png" alt="Logo Grão e Arte">
         </div>
-    </header>
 
-    <section class="hero">
-        <div class="video-container">
-            <video autoplay muted loop id="video-fundo">
-                <source src="videos/40166-424912123_medium.mp4" type="video/mp4">
-            </video>
-            <div class="overlay"></div> </div>
+        <div class="menu-mobile" onclick="toggleMenu()">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div>
 
-        <div class="conteudo-texto">
-            <p class="subtitulo">CAFÉ ARTESANAL & MOAGEM FINA</p>
-            <h1>A ESSÊNCIA DO GRÃO EM CADA GOLE</h1>
-            <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20experimentar%20os%20cafés%20do%20Grão%20e%20Arte." target="_blank" class="link-botao-principal">
+        <nav id="nav-menu">
+            <ul class="menu-lista">
+                <li><a href="#inicio">INÍCIO</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#cardapio">CARDÁPIO</a></li>
+                <li><a href="#contato">CONTATOS</a></li> 
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="video-container">
+        <video autoplay muted loop id="video-fundo">
+            <source src="videos/40166-424912123_medium.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div> 
+    </div>
+
+    <div class="conteudo-texto">
+        <p class="subtitulo">CAFÉ ARTESANAL & MOAGEM FINA</p>
+        <h1>A ESSÊNCIA DO GRÃO EM CADA GOLE</h1>
+        
+        <a href="https://wa.me/5511999999999?text=Olá!" target="_blank" class="link-botao-principal">
              <button class="btn-principal">Quero experimentar</button>
-            </a>
-        </div>
-    </section>  
+        </a>
+    </div>
+</section>
 
     <section id="sobre" class="secao-sobre">
     <div class="container-sobre">

@@ -471,88 +471,165 @@ h1 {
 @media (max-width: 768px) {
     /* Ajusta o Menu para não quebrar */
     body {
-        overflow-x: hidden; /* Trava qualquer movimento lateral indesejado */
+        overflow-x: hidden; 
         width: 100vw;
         position: relative;
     }
 
-   header .interface {
-        display: flex;
-        flex-direction: column; /* Coloca a logo em cima e o menu embaixo */
-        align-items: center;
-        gap: 15px;
-        padding: 10px 0;
+    header .logo {
+        display: none; 
     }
 
+
+   header .interface {
+        display: flex;
+        justify-content: center; 
+    }
+   
+    .hero {
+        margin-top: 0 !important;
+        height: 100vh; /* Faz o vídeo ocupar a tela cheia */
+        }
+
     header {
-        padding: 15px 0; 
+        background: transparent;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        padding: 20px 0;
     }
 
     header .interface {
         display: flex;
-        flex-direction: column; /* Coloca a logo em cima e o menu embaixo */
-         align-items: center;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5%;
     }
 
     body, html {
-    overflow-x: hidden; 
-    width: 100%;
-    }
-
-    .logo img {
-    max-width: 100px;
-    height: auto;
-    } 
-
-    nav {
+        overflow-x: hidden; 
         width: 100%;
     }
 
-     nav ul {
+    .logo img {
+        max-width: 100px;
+        height: auto;
+    } 
+
+    nav ul {
         display: flex;
-        flex-direction: row; /* Força os itens lado a lado */
-        justify-content: center;
-        flex-wrap: wrap; /* Se não couber em uma linha, pula para a próxima de forma organizada */
-        gap: 8px; /* Espaço entre os botões */
+        flex-direction: column;
+        gap: 30px; /* Espaço bom entre os links */
         padding: 0;
     }
-   
+    
+    .menu-mobile {
+        display:flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 6px;
+        z-index: 3000;
+    }
+
+    .menu-mobile.ativo .linha:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        background-color: #fff; /* Garante que o X seja branco */
+        }
+
+    .menu-mobile.ativo .linha:nth-child(2) {
+        opacity: 0; /* Some com a linha do meio */
+    }
+ 
+    .menu-mobile.ativo .linha:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -8px);
+        background-color: #fff;
+    }
+
+    .menu-mobile .linha {
+        background-color: #ffffff !important; 
+        width: 30px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+
+    .linha {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+
+   nav {
+        display: none; 
+        position: fixed; /* Mudei para FIXED para ele não empurrar o vídeo ao abrir */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Ocupa a tela toda ao abrir, estilo profissional */
+        background-color: rgba(75, 44, 32, 0.98); 
+        z-index: 2000;     
+    } 
 
     nav ul li {
         display: inline-block;
+        text-align: center;
     }
+
+    nav.ativo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+    
 
     nav ul li a {
-        font-size: 10px; /* Letra menor para caber em telas como 302px */
-        padding: 6px 10px;
-        background-color: #4B2C20; /* Garante o fundo marrom nos botões */
-        border-radius: 15px;
-        white-space: nowrap; /* Impede que o texto do botão quebre no meio */
+        font-size: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        background: none; /* Remove aquele fundo de botão antigo */
     }
 
-    .logo{
+    .logo {
         text-align: center;
         margin-bottom: 15px;
     }
 
     .secao-hero h1 {
-        font-size: 20px; /* Tamanho reduzido para não vazar da tela */
-        line-height: 1.3;
-        max-width: 280px; /* Trava a largura do texto para telas pequenas */
+        font-size: 15px !important; 
+        line-height: 1.2;
+        max-width: 300px; 
         margin: 0 auto 20px auto;
         text-align: center;
     } 
     
     .secao-hero h2 {
-        font-size: 14px; /
+        font-size: 11px !important; 
+        letter-spacing: 2px;   
     }
     
+    .secao-hero .btn-hero {
+        font-size: 12px !important; 
+        padding: 10px 20px;
+    }
+
+
     .secao-cardapio .container-cardapio {
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
 
+
+    .subtitulo {
+        font-size: 10px !important;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+    
     
     .container-copo-grande {
         flex-direction: column;
