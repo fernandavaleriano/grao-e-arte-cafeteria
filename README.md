@@ -26,6 +26,8 @@ Tipografia e Cores: Paleta baseada em tons terrosos (#4B2C20) e fundos orgânico
 
 Identidade Visual: Implementação de Favicon customizado para garantir reconhecimento da marca em múltiplas abas do navegador.
 
+Mobile First & Responsividade: Layout totalmente adaptável para dispositivos móveis, garantindo que o cardápio e a experiência 360º sejam acessíveis em qualquer tamanho de tela.
+
 Como Executar o Projeto
 Clone o repositório.
 

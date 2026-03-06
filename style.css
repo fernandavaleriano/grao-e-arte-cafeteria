@@ -465,3 +465,63 @@ h1 {
     font-style: italic;
     letter-spacing: 0.5px;
 }
+
+
+/* --- RESPONSIVIDADE (CELULAR) --- */
+@media (max-width: 768px) {
+    /* Ajusta o Menu para não quebrar */
+    .interface {
+        padding: 0 5%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    /* Hero Section (Abertura) */
+    .secao-hero h1 {
+        font-size: 32px; /* Diminui o título para não cortar no celular */
+    }
+
+    /* Cardápio: Transforma as 3 colunas em 1 única coluna */
+    .secao-cardapio .container-cardapio {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* Seção do Copo/Footer: Empilha o vídeo e o texto */
+    .container-copo-grande {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .bloco-video {
+        max-width: 100%; /* Vídeo ocupa a largura total no celular */
+    }
+
+    .bloco-texto-copo {
+        text-align: center;
+    }
+
+    .bloco-texto-copo h3 {
+        font-size: 28px;
+    }
+
+    /* Rodapé Interno: Ajusta os contatos para ficarem centralizados */
+    .rodape-interno {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .links-sociais {
+        align-items: center; /* Centraliza botões do Whats e Insta no celular */
+    }
+}
