@@ -471,30 +471,46 @@ h1 {
 @media (max-width: 768px) {
     /* Ajusta o Menu para não quebrar */
     .interface {
-        padding: 0 5%;
+        max-width: 100vw;
+        box-sizing: border-box;
+    }
+
+    body, html {
+    overflow-x: hidden; /* Remove o arrasto lateral de vez */
+    width: 100%;
     }
 
     nav ul {
-        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 0;
     }
 
     nav ul li a {
-        font-size: 14px;
+        font-size: 12px;
+        padding: 8px 12px;
     }
 
-    /* Hero Section (Abertura) */
+    
     .secao-hero h1 {
-        font-size: 32px; /* Diminui o título para não cortar no celular */
+        font-size: 24px; 
+        line-height: 1.2;
+        padding: 0 10px;
     }
 
-    /* Cardápio: Transforma as 3 colunas em 1 única coluna */
+    .secao-hero h2 {
+        font-size: 14px; /
+    }
+    
     .secao-cardapio .container-cardapio {
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
 
-    /* Seção do Copo/Footer: Empilha o vídeo e o texto */
+    
     .container-copo-grande {
         flex-direction: column;
         text-align: center;
@@ -502,7 +518,7 @@ h1 {
     }
 
     .bloco-video {
-        max-width: 100%; /* Vídeo ocupa a largura total no celular */
+        max-width: 100%; 
     }
 
     .bloco-texto-copo {
@@ -513,7 +529,7 @@ h1 {
         font-size: 28px;
     }
 
-    /* Rodapé Interno: Ajusta os contatos para ficarem centralizados */
+    
     .rodape-interno {
         flex-direction: column;
         align-items: center;
@@ -522,6 +538,6 @@ h1 {
     }
 
     .links-sociais {
-        align-items: center; /* Centraliza botões do Whats e Insta no celular */
+        align-items: center; 
     }
 }
