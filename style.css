@@ -660,4 +660,53 @@ h1 {
     .links-sociais {
         align-items: center; 
     }
+
+     /* 1. Organiza a seção para os itens ficarem um em cima do outro */
+    .container-sobre {
+        display: flex;
+        flex-direction: column-reverse; /* Texto em cima, imagem embaixo para destaque */
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+     
+        /* 2. Aumenta a foto do café */
+    .coluna-imagem {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+     
+    .coluna-imagem img {
+        width: 200px; /* Aumentamos de um "ícone" para uma foto de destaque */
+        max-width: 70%; 
+        height: auto;
+        border-radius: 15px; 
+        margin-top: 20px;
+    }
+     
+        /* 3. Ajusta o bloco de texto */
+    .coluna-texto {
+        width: 100%;
+    }
+     
+    .coluna-texto h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+     
+    .coluna-texto p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+     
+    .btn-saiba-mais {
+        padding: 12px 30px;
+        font-size: 14px;
+    }
 }
+
+
