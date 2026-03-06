@@ -1,0 +1,467 @@
+
+/* ASSUNTO 1 COMEÇO */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f3f0eb; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER: Organiza o logo e o menu em linha */
+header {
+    padding: 20px 4%;
+    position: absolute; /* Deixa o menu por cima do vídeo */
+    width: 100%;
+    z-index: 10;
+}
+
+.menu-lista {
+    list-style-type: none;
+    display: flex;
+    margin-top: -40px; /* O valor negativo "puxa" o menu para cima */
+    transition: 0.3s;
+}
+
+.link-botao-principal {
+    text-decoration: none;
+    
+}
+
+.menu-lista li a {
+   display: inline-block;
+   background-color: #7b5232;
+   color: white;
+   padding: 10px 25px;
+   margin: 0 10px;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 14px;
+   transition: transform 0.3s, background-color 0.3s; /* Suaviza a transformação e a cor */
+}
+
+.menu-lista li a:hover {
+    transform: scale(1.1);    /* O efeito de "pular" para fora da tela */
+    background-color: #5d3d25; /* Escurece o marrom ao tocar */
+    cursor: pointer;
+}
+
+.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+/* NAV: Estiliza os botões marrons arredondados */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: #7b5232; 
+    padding: 10px 25px;
+    margin: 0 10px;
+    border-radius: 30px; /* Faz o formato de pílula/arredondado */
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s; /* Suaviza a cor quando passa o mouse */
+}
+
+nav ul li a:hover {
+    background-color: #5d3d25; /* Escurece um pouco no hover */
+}
+
+/* HERO: A área do vídeo */
+.hero {
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Garante que o vídeo não saia da borda */
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#video-fundo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz o vídeo preencher tudo sem esticar */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Camada preta com 30% de transparência */
+}
+
+/* TEXTO: Centraliza e estiliza os títulos */
+.conteudo-texto {
+    position: relative;
+    z-index: 5;
+    text-align: left;
+    width: 100%;
+    color: white;
+}
+
+.subtitulo {
+    letter-spacing: 3px; /* Espaçamento entre as letras */
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;}
+
+h1 {
+    font-size: 50px;
+    max-width: none;
+    line-height: 1.2;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 1%;
+}
+
+.btn-principal {
+    background-color: #7b5232;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-principal:hover {
+    transform: scale(1.05); /* Efeito de aumentar levemente ao tocar */
+}
+
+
+/* ASSUNTO 2 COMEÇO*/
+
+
+/* Configuração Geral da Seção */
+.secao-sobre {
+    background-color: #f3f0eb; 
+    padding: 100px 4%;     
+    display: flex;
+    justify-content: center;
+}
+
+.container-sobre {
+    display: flex;            
+    align-items: center;      
+    gap: 80px; /* Distância entre a foto e o texto */
+    max-width: 1200px;/* Limita a largura para não espalhar demais em telas grandes */
+}
+
+.coluna-imagem img {
+    width: 100%;
+    max-width: 450px;/* Tamanho da foto */
+    border-radius: 20px;      
+    box-shadow: 20px 20px 0px #7b5232; 
+}
+
+
+.coluna-texto {
+    flex: 1; 
+}
+
+.coluna-texto h2 {
+    font-size: 42px;
+    color: #4b2c20;           
+    margin-bottom: 25px;
+}
+
+.coluna-texto h2 span {
+    color: #7b5232;/* Destaque marrom na palavra HISTÓRIA */
+    border-bottom: 3px solid #7b5232; /* Linha decorativa embaixo do span */
+}
+
+.coluna-texto p {
+    font-size: 18px;
+    color: #555;              
+    line-height: 1.8;/* Espaçamento entre linhas para não cansar o olho */
+    margin-bottom: 20px;
+}
+
+.btn-saiba-mais {
+    background-color: #7b5232;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;    
+}
+
+.btn-saiba-mais:hover {
+    transform: scale(1.05); /* O efeito de "saltar" */
+    background-color: #4b2c20;
+}
+
+/* ASSUNTO 3 COMEÇO*/   
+
+.secao-cardapio {
+    padding: 80px 4%;
+    background-color: #ffffff; /* Fundo branco para contrastar com o bege da seção anterior */
+    text-align: center;
+}
+
+.titulo-secao {
+    text-align: center;
+    width: 100%;
+    font-size: 42px;
+    color: #4b2c20;
+    margin-bottom: 60px;
+    display: block;
+    border-bottom: 5px solid #7b5232; 
+    padding-bottom: 10px;
+    max-width: fit-content; 
+    margin-left: auto;      
+    margin-right: auto;
+}
+
+.titulo-secao span {
+    color: #7b5232;
+    border-bottom: none; /* Remove a linha do span para destacar apenas a palavra */
+}
+
+.secao-cardapio .flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Garante que os itens quebrem de linha em telas menores */
+}
+
+.item-cardapio {
+    background-color: #f3f0eb;
+    padding: 30px 20px;
+    border-radius: 20px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+/* Efeito de saltar nos itens do cardápio */
+.item-cardapio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.img-item img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.item-cardapio h3 {
+    color: #4b2c20;
+    margin-bottom: 15px;
+}
+
+.item-cardapio p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    min-height: 40px; /* Mantém o alinhamento mesmo com textos diferentes */
+}
+
+.preco {
+    font-weight: bold;
+    color: #7b5232;
+    font-size: 20px;
+}
+
+.subtitulo-cardapio {
+    font-size: 28px;
+    color: #4b2c20;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.flex-destaques {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+/* Estilo da Lista sem Fotos */
+.cardapio-lista {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: left;
+    background-color: #fdfaf7;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.categoria h4 {
+    color: #7b5232;
+    border-bottom: 2px solid #7b5232;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.categoria ul {
+    list-style: none;
+}
+
+
+/* ASSUNTO 3 COMEÇO*/
+
+/* --- ESTILO DA SEÇÃO FINAL --- */
+.secao-final {
+    background-color: #f3f0eb; 
+    padding: 80px 4%;
+}
+
+.container-copo-grande {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px; 
+}
+
+
+.bloco-video {
+    flex: 1.5; 
+    max-width: 600px; 
+}
+
+#video-footer {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    display: block;
+}
+
+/* Estilo do Bloco de Texto ao lado do vídeo */
+.bloco-texto-copo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.bloco-texto-copo h3 {
+    font-size: 36px;
+    color: #4b2c20;
+    margin-bottom: 20px;
+}
+
+.bloco-texto-copo h3 span {
+    color: #7b5232;
+}
+
+.bloco-texto-copo p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+.rodape-interno {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 40px;
+    border-top: 1px dashed #7b5232; 
+    padding-top: 25px;
+}
+
+.info-contato h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4b2c20;
+}
+
+.info-contato p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.links-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start; 
+}
+
+.btn-whats {
+    background-color: #25d366;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-whats:hover {
+    transform: translateY(-3px); 
+    background-color: #1ebe5d;
+}
+
+.instagram-link {
+    color: #7b5232;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.projeto-fantasma {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px; 
+    padding-top: 20px;
+    border-top: 1px solid rgba(75, 44, 32, 0.1); 
+}
+
+.projeto-fantasma p {
+    font-size: 12px; 
+    color: #888;     
+    font-style: italic;
+    letter-spacing: 0.5px;
+}

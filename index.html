@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grão & Arte | Café Artesanal</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="icon" type="image/png" href="imagens/grao-e-arte.png.png">
+    
+</head>
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <img src="imagens/grao-e-arte.png.png" alt="Logo Grão e Arte">
+            </div>
+            <nav>
+                <ul class="menu-lista">
+                    <li><a href="#inicio">INÍCIO</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#cardapio">CARDÁPIO</a></li>
+                    <li><a href="#contato">CONTATOS</a></li> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="video-container">
+            <video autoplay muted loop id="video-fundo">
+                <source src="videos/40166-424912123_medium.mp4" type="video/mp4">
+            </video>
+            <div class="overlay"></div> </div>
+
+        <div class="conteudo-texto">
+            <p class="subtitulo">CAFÉ ARTESANAL & MOAGEM FINA</p>
+            <h1>A ESSÊNCIA DO GRÃO EM CADA GOLE</h1>
+            <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20experimentar%20os%20cafés%20do%20Grão%20e%20Arte." target="_blank" class="link-botao-principal">
+             <button class="btn-principal">Quero experimentar</button>
+            </a>
+        </div>
+    </section>  
+
+    <section id="sobre" class="secao-sobre">
+    <div class="container-sobre">
+        <div class="coluna-imagem">
+            <img src="imagens/cafe-xicara.jfif" alt="Xícara de café artesanal">
+        </div>
+
+        <div class="coluna-texto">
+            <h2>NOSSA <span>HISTÓRIA</span></h2>
+            <p>Cada grão é selecionado manualmente e torrado de forma artesanal, preservando o aroma e o sabor original do café. Sinta a diferença em cada gole.</p>
+            <p>No Grão & Arte, acreditamos que o café é mais que uma bebida; é um ritual que desperta os sentidos e conecta pessoas através da moagem fina e do carinho no preparo.</p>
+            
+            <button class="btn-saiba-mais">Saiba Mais</button>
+        </div>
+    </div>
+</section>
+
+<section id="cardapio" class="secao-cardapio">
+
+        <h2 class="titulo-secao">NOSSO <span>CARDÁPIO</span></h2>
+        
+        <div class="container-flex-cardapio">
+            
+            <div class="coluna-mais-pedidos">
+                <h3 class="subtitulo-cardapio">OS MAIS PEDIDOS</h3>
+
+                <div class="flex-destaques">
+                    <div class="item-cardapio">
+                        <div class="img-item"><img src="imagens/imagem-expresso.png" alt="Expresso"></div>
+                        <h3>Expresso Tradicional</h3>
+                        <p>O clássico aroma intenso com moagem fina.</p>
+                        <div class="preco">R$ 8,00</div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="img-item"><img src="imagens/expresso-chocolate.png" alt="Capuccino"></div>
+                        <h3>Capuccino Especial</h3>
+                        <p>Equilíbrio perfeito entre café e cacau.</p>
+                        <div class="preco">R$ 12,00</div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="img-item"><img src="imagens/cha-gelado.png" alt="Cold Brew"></div>
+                        <h3>Cold Brew</h3>
+                        <p>Café extraído a frio, refrescante e suave.</p>
+                        <div class="preco">R$ 15,00</div>
+                    </div>
+
+                    <div class="item-cardapio">
+                        <div class="img-item"><img src="imagens/croa.png" alt="Croissant"></div>
+                        <h3>Croissant de Amêndoas</h3>
+                        <p>Massa folhada na hora, crocante e amanteigada.</p>
+                        <div class="preco">R$ 18,00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cardapio-lista">
+                <div class="categoria">
+                    <h4>Cafés & Bebidas</h4>
+                    <ul>
+                        <li><span>Macchiato</span> <strong>R$ 10,00</strong></li>
+                        <li><span>Mocha Chocolate</span> <strong>R$ 14,00</strong></li>
+                        <li><span>Latte Art</span> <strong>R$ 11,00</strong></li>
+                        <li><span>Chá de Hibisco com Frutas</span> <strong>R$ 9,00</strong></li>
+                    </ul>
+                </div>
+
+                <div class="categoria">
+                    <h4>Aperitivos & Salgados</h4>
+                    <ul>
+                        <li><span>Pão de Queijo Mineiro (Unid)</span> <strong>R$ 5,00</strong></li>
+                        <li><span>Croissant Tradicional</span> <strong>R$ 14,00</strong></li>
+                        <li><span>Tostex de Peito de Peru</span> <strong>R$ 16,00</strong></li>
+                        <li><span>Empada de Frango</span> <strong>R$ 8,00</strong></li>
+                    </ul>
+                </div>
+
+                <div class="categoria">
+                    <h4>Sobremesas</h4>
+                    <ul>
+                        <li><span>Bolo de Cenoura com Chocolate</span> <strong>R$ 12,00</strong></li>
+                        <li><span>Cheesecake de Frutas Vermelhas</span> <strong>R$ 18,00</strong></li>
+                        <li><span>Brownie com Sorvete</span> <strong>R$ 22,00</strong></li>
+                        <li><span>Torta de Maçã</span> <strong>R$ 15,00</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div> </div>
+</section>
+
+<section id="contato" class="secao-final">
+    <div class="interface">
+        
+        <div class="container-copo-grande">
+            <div class="bloco-video">
+                <video autoplay loop muted playsinline id="video-footer">
+                    <source src="videos/WhatsApp Video 2026-03-05 at 14.49.29.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+            </div>   
+            
+            <div class="bloco-texto-copo">
+                <h3>SEU NOME, <span>NOSSO CAFÉ</span></h3>
+                <p>Aqui na Grão & Arte, cada detalhe é pensado para você. Peça seu copo personalizado e leve nossa essência para onde for.</p>
+                
+                <div class="rodape-interno">
+                    <div class="info-contato">
+                        <h4>Visite-nos</h4>
+                        <p>Rua dos Grãos, 123 - Centro</p>
+                        <p>Cidade do Café - SP</p>
+                    </div>
+
+                    <div class="links-sociais">
+                        <a href="https://wa.me/5511999999999" target="_blank" class="btn-whats">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="#" target="_blank" class="instagram-link">
+                            @graoearte
+                        </a>
+
+                        </footer>
+                        
+                            <div class="projeto-fantasma">
+                                    <p>Este é um projeto acadêmico/fictício para fins de demonstração de design e desenvolvimento.</p>
+                        </div>
+                        
+                            </div> </section> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+</body>
+</html>
