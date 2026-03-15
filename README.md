@@ -15,7 +15,7 @@ Landing page de alta fidelidade desenvolvida para uma cafeteria, focada em exper
 <div align="center"> <img src="prints/web (2).jpg" alt="Grão & Arte Logo" width="280"/>
 
 <div align="center"> <img src="prints/web (3).jpg" alt="Grão & Arte Logo" width="280"/>
-|--------|
+
 | Mobile |
 |--------|
 
