@@ -25,7 +25,7 @@ Landing page de alta fidelidade desenvolvida para uma cafeteria, focada em exper
 
 <div align="center"> <img src="prints/celular  (3).jpg" alt="Grão & Arte Logo" width="280"/>
 
-**[🌐 Ver site ao vivo](https://graoearte.netlify.app)** · **[Me contratar](https://wa.me/5527988796796?text=Olá%20Fernanda!%20Vim%20pelo%20seu%20portfólio%20e%20tenho%20interesse%20nos%20seus%20serviços.)**
+**[🌐 Ver site ao vivo](https://grao-e-arte-cafeteriaa.vercel.app/)** · **[Me contratar](https://wa.me/5527988796796?text=Olá%20Fernanda!%20Vim%20pelo%20seu%20portfólio%20e%20tenho%20interesse%20nos%20seus%20serviços.)**
 
 
 ## 🛠️ Quick Stack
@@ -34,7 +34,7 @@ Landing page de alta fidelidade desenvolvida para uma cafeteria, focada em exper
 | :--- | :--- |
 | **Frontend** | HTML5 Semântico, CSS3 (Flexbox, Animations, Responsive Design) |
 | **Interatividade** | JavaScript (Controle de mídia e navegação) |
-| **Deploy/CI-CD** | GitHub & Netlify (CI/CD via branch `main`) |
+| **Deploy/CI-CD** | GitHub & Vercel (CI/CD via branch `main`) |
 
 ---
 
@@ -129,7 +129,7 @@ Este projeto é uma amostra do que posso criar para o seu negócio:
 - 🎨 **Sites institucionais** para clínicas, salões, estúdios e negócios locais
 - 🖌️ **Identidade visual** — criação de logo, marca, paleta e tipografia do zero
 - 📱 **Design responsivo** — experiência perfeita em celular e desktop
-- 🚀 **Deploy e hospedagem** rápida via Netlify com CI/CD automático
+- 🚀 **Deploy e hospedagem** rápida via Vercel com CI/CD automático
 - 🔗 **Integração com WhatsApp** para conversão direta de clientes
  
 ---
